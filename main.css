@@ -12,22 +12,25 @@ body {
 #store-container {
   flex-wrap: wrap;
   display: flex;
-  gap: 20px;
+  gap: 10px;
   justify-content: flex-start;
   padding: 10px;
 }
 
 #store-container .item {
-  padding: 10px;
+  padding: 20px;
   border: solid 1px #ccc;
-  border-radius: 10px;
-  max-height: 80px;
+  border-radius: 5px;
 }
 
 #shopping-cart-container {
+  position: absolute;
+  background-color: white;
+  width: 300px;
+  right: 0;
   border: 1px solid #ccc;
   border-radius: 15px;
-  padding: 10px 15px;
+  padding: 10px;
 }
 
 #shopping-cart-container .item {
@@ -44,14 +47,24 @@ body {
 .title {
   font-weight: bold;
 }
-.price {
+.item .price {
   color: green;
   font-weight: 600;
+}
+.total {
+  font-weight: bold;
+  padding: 10px 0;
+  font-size: 20px;
+}
+
+.item div {
+  padding: 5px 0;
 }
 
 button {
   color: black;
-  background-color: yellow;
+  border: none;
+  background-color: rgba(241, 217, 28, 1);
   border-radius: 5px;
   margin: 5px;
   padding: 5px;
